@@ -1,0 +1,33 @@
+{
+  "name": "@mailtarget/sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "contributors": [
+    {
+      "name": "Rizky Novando Priyadi",
+      "email": "rizkynovando@gmail.com",
+      "url": "https://gitlab.com/novando"
+    }
+  ],
+  "license": "GPLv3",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
