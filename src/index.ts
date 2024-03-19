@@ -1,9 +1,7 @@
-import transmission, {AddressType, AttachmentType, HeaderType, OptionsAttributesType} from './lib/http'
-
-export class Layang {
+import transmission, { AddressType, AttachmentType, HeaderType } from './lib/http'
+export class MailtargetSdk {
   private apiKey: string
   private from: AddressType
-  private transmissionId = undefined
   private errorMessage = undefined
   private optionsAttributes = {
     clickTracking: true,
@@ -37,6 +35,7 @@ export class Layang {
   public setTransactional = (active: boolean) => {
     this.optionsAttributes.transactional = active
   }
+  public getErrorMessage = () => this.errorMessage
   public sendMessage = async (html: string) => {
     try {
       const payload = {
@@ -54,11 +53,11 @@ export class Layang {
         optionsAttributes: this.optionsAttributes,
       }
       const datum = await transmission(payload, this.apiKey)
-      this.transmissionId = datum.transmissionId
-      return true
+      this.errorMessage = undefined
+      return datum.transmissionId
     } catch (err: any) {
       this.errorMessage = err
-      return false
+      return undefined
     }
   }
   public sendMessageTemplate = async (templateId: string, substitutionData = {}) => {
@@ -79,11 +78,11 @@ export class Layang {
         substitutionData,
       }
       const datum = await transmission(payload, this.apiKey)
-      this.transmissionId = datum.transmissionId
-      return true
+      this.errorMessage = undefined
+      return datum.transmissionId
     } catch (err: any) {
       this.errorMessage = err
-      return false
+      return undefined
     }
   }
 }
