@@ -1,9 +1,6 @@
 <div align="center">
    <a href="https://mailtarget.co">
-      <picture>
-         <source width="400px" srcset="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png">
-         <img width="400px" src="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png" />
-       </picture>
+      <img width="400px" src="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png" />
    </a>
    <br><br>
 </div>
@@ -28,7 +25,7 @@ pnpm add @mailtarget/sdk
 ```
 
 ### Authentication
-You have to create a (mailtarget)[https://app.mailtarget.co/signup?ref=65e6cf4d63d7ae0008b3e4eb] account to get an API Key.
+You have to create a [mailtarget](https://app.mailtarget.co/signup?ref=65e6cf4d63d7ae0008b3e4eb) account to get an API Key.
 To manage your API Key navigate to the page by clicking ***Configuration*** on the navbar in the mailtarget dashboard
 and then select API Key.
 
