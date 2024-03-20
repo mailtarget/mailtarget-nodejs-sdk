@@ -1,8 +1,8 @@
 <div align="center">
    <a href="https://mailtarget.co">
       <picture>
-         <source width="400px" srcset="https://github.com/novando/nodejs-sdk/assets/mailtarget.png">
-         <img width="400px" src="https://github.com/novando/nodejs-sdk/assets/mailtarget.png" />
+         <source width="400px" srcset="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png">
+         <img width="400px" src="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png" />
        </picture>
    </a>
    <br><br>
