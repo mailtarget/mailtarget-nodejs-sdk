@@ -8,8 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist & tsup",
-    "release": "npm run build && changelogen --release && git push --follow-tags",
-    "publish": "npm publish --access public"
+    "release": "npm run build && changelogen --release && npm publish && git push --follow-tags"
   },
   "files": [
     "dist"
