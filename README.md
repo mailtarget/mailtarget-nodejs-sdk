@@ -1,10 +1,3 @@
-<div align="center">
-   <a href="https://mailtarget.co">
-      <img width="400px" src="https://raw.githubusercontent.com/novando-mtarget/mailtarget-nodejs-sdk/master/assets/mailtarget.png" />
-   </a>
-   <br><br>
-</div>
-
 # Mailtarget NodeJs SDK
 
 The Mailtarget NodeJs SDK enable NodeJs developer to work with Mailtarget API efficiently.
