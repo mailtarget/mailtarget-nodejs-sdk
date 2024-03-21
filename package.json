@@ -1,5 +1,5 @@
 {
-  "name": "@mailtarget/sdk",
+  "name": "@mailtarget/nodejs-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -7,7 +7,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup"
+    "build": "tsup",
+    "release": "npm run build && changelogen --release && npm publish && git push --follow-tags"
   },
   "files": [
     "dist"
@@ -24,6 +25,7 @@
   "license": "GPLv3",
   "devDependencies": {
     "@types/node": "^20.11.28",
+    "changelogen": "^0.5.5",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"
   },
