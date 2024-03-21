@@ -15,13 +15,13 @@ The Mailtarget NodeJs SDK enable NodeJs developer to work with Mailtarget API ef
 To install the SDK to your project, you could get the package from NPM via following command.
 ```sh
 # NPM
-npm install @mailtarget/sdk
+npm install @mailtarget/nodejs-sdk
 
 # Yarn
-yarn add @mailtarget/sdk
+yarn add @mailtarget/nodejs-sdk
 
 # PNPM
-pnpm add @mailtarget/sdk
+pnpm add @mailtarget/nodejs-sdk
 ```
 
 ### Authentication
@@ -33,7 +33,7 @@ and then select API Key.
 
 ### Basic Usage
 ```js
-const { Layang } = require('@mailtarget/sdk');
+const { Layang } = require('@mailtarget/nodejs-sdk');
 
 const sender = { email: 'usename@yourdomain.com', name: 'John Doe' };
 const subject = 'mailtarget Email Test';
@@ -74,7 +74,7 @@ If you already using mailtarget Template Creator,
 you could use that template to send an email by invoking `sendMessageTempalate` function and pass the `templateId` as a parameter.
 Here is an example :
 ```js
-const { Layang } = require('@mailtarget/sdk');
+const { Layang } = require('@mailtarget/nodejs-sdk');
 
 const sender = { email: 'usename@yourdomain.com', name: 'John Doe' };
 const subject = 'mailtarget Email Test';
@@ -108,7 +108,7 @@ await mailtarget.sendMessageTemplate(subject, to, templateId, substituteData);
 
 ## Optional Configuration
 Here is a list of configuration you could make on your email
-(just make sure you declare it before sendMessage or sendMessageTemplate invocation) :
+(just make sure you declare it before `sendMessag` or `sendMessageTemplate` invocation) :
 
 ### Carbon Copy (CC)
 ```js
