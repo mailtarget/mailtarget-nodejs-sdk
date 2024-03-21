@@ -11,6 +11,9 @@ The Mailtarget NodeJs SDK enable NodeJs developer to work with Mailtarget API ef
 
 ## Getting Started
 
+### Requirement
+Make sure you have LTS version of NodeJs, minimum NodeJs v14 
+
 ### Installation
 To install the SDK to your project, you could get the package from NPM via following command.
 ```sh
